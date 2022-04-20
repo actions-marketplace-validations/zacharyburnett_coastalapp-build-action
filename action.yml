@@ -1,0 +1,21 @@
+# action.yml
+name: 'CoastalApp build'
+description: 'builds the CoastalApp FORTRAN application and returns built binaries'
+inputs:
+  commit:
+    description: 'commit to checkout'
+    required: true
+    default: 'master'
+  components:
+    description: 'CoastalApp components to build'
+    required: true
+    default: 'ADCIRC'
+outputs:
+  binaries:
+    description: 'built binaries'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.commit }}
+    - ${{ inputs.components }}
