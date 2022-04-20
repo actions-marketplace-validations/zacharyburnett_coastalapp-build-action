@@ -1,6 +1,6 @@
 # CoastalApp build action
 
-This action builds the [CoastalApp FORTRAN application](https://github.com/noaa-ocs-modeling/CoastalApp) and returns built binaries
+This action builds the [CoastalApp FORTRAN application](https://github.com/noaa-ocs-modeling/CoastalApp) and returns built binaries.
 
 ## Inputs
 
